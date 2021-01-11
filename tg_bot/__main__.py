@@ -26,15 +26,15 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 PM_START_TEXT = """
-**Hello {}, My Name is {}!** 
-I am an **POWERFUL**  group management bot.
+**Hello {} 👋😉, My Name is {}!** 
+I am a **POWERFUL**  group management bot 
 You can find the list of available commands with /help.
 
 """
 
 HELP_STRINGS = """
 
-Hello! my name *{}*.
+Hello😚! my name *{}*.
 
 *Main* commands available:
  - /start: start the bot
@@ -141,12 +141,12 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤝HELP🤝",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="🧑‍💻My Creator🧑‍💻",
+                                                                                   InlineKeyboardButton(text="🧑‍💻My Owner🧑‍💻",
                                                                        url="t.me/d_rcybersec")],
                                                                                    [InlineKeyboardButton(text="ADD MISS LIZA TO YOUR GROUP",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="Source Code",
-                                                                       url="https://github.com/legendx22/GRANDROBOT")
+                                                                                   InlineKeyboardButton(text="Support Group",
+                                                                       url="https://t.me/joinchat/RJq_IX2cOCQY4Agz")
                                                                                  ]]))
 
     else:
